@@ -1,0 +1,19 @@
+[tools]
+pnpm = "latest"
+"ubi:pocketbase/pocketbase" = "latest"
+
+[settings.sops]
+rops = false
+age_key_file = "~/.config/wes/dev/dev-age-id.key"
+age_recipients = "age1yubikey1q2ku8pcyj4vnjs34lfzrw6q54z96anuxj69p3dpeyz9n7aa58733s58w20p"
+
+[env]
+SOPS_AGE_KEY_FILE = "~/.config/wes/dev/dev-age-id.key"
+'_'.file = [
+  { path = "~/.config/wes/dev/wes-env.yaml" },
+]
+TB_LOCAL_WORKSPACE_TOKEN = "p.eyJ1IjogImM0ZjY0YmNmLWJjMjAtNGE4Zi1iMzg0LTI3NmUzZDBjNzc2OCIsICJpZCI6ICIxMmM3MzVjYy0wMjYxLTRiNjctOTU3Mi1jMTNkMTc5ZjMxMTYiLCAiaG9zdCI6IG51bGx9.lf_hS0M2Kg0J94jzvu_C9H19u-hHaxPdLdwKWgt5kOA"
+TB_LOCAL_USER_TOKEN = "p.eyJ1IjogImM2YjljYTcxLTRlMmQtNGMyMC1iMTc5LTA2OTY4NTJlMjhhZCIsICJpZCI6ICI3ZDMzYzBlOS0zY2IyLTQ0ZDQtOTAyOC1lYjRiOWVkMjZmNDAiLCAiaG9zdCI6IG51bGx9.C-egwF0dJYeRMtKu9H9S3HQGWAJPC1WxzXLCo8PawC4"
+
+[tasks]
+tb-start = "tb local start"
